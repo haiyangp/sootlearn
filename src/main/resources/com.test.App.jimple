@@ -1,0 +1,47 @@
+public class com.test.App extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        com.test.App r0;
+
+        r0 := @this: com.test.App;
+
+        specialinvoke r0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.io.PrintStream r0;
+        java.lang.String[] r1;
+        int $i0, i1, i2;
+
+        r1 := @parameter0: java.lang.String[];
+
+        r0 = <java.lang.System: java.io.PrintStream out>;
+
+        i1 = 5;
+
+        i2 = 5;
+
+        $i0 = lengthof r1;
+
+        if $i0 != 0 goto label1;
+
+        i1 = 5 + 1;
+
+        goto label2;
+
+     label1:
+        i2 = 5 + 1;
+
+     label2:
+        virtualinvoke r0.<java.io.PrintStream: void println(int)>(i1);
+
+        virtualinvoke r0.<java.io.PrintStream: void println(int)>(i2);
+
+        return;
+    }
+}
